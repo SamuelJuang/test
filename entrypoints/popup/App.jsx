@@ -33,6 +33,7 @@ function App() {
             <p> {winning ? `The word is ${words}` : ""}</p>
             <h2>Guess the word</h2>
             <InputForm ans={words} win={() => win(true)} resetWord={() => win(false)} />
+            <p className="has-text-grey-light">Input only LOWERCASE characters</p>
           </div>
         )}
       </div>

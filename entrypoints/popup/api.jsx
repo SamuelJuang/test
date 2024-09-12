@@ -17,7 +17,6 @@ const fetchWords = () => {
       setLoading(true);
       const response = await api.get(`/word?length=${num}&lang=en`);
       setLoading(false);
-      console.log("string".split(''));
       setWords(response.data[0]);
     } catch (err) {
         setError(err);
